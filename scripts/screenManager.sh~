@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [xrandr | grep -E 'HDMI1 connected' &> /dev/nul]
+then
+    echo "coucou"
+else
+    echo "nope"
+fi
