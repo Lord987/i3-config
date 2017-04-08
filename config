@@ -126,7 +126,8 @@ assign [class="Firefox"] $workspace1
 assign [class="Emacs"] $workspace3
 assign [class="Spotify"] $workspace10
 
-#for_window [class="Thunar"] floating enable
+#for_window [class="yakuake"] floating enable
+#for_window [class=”yakuake”] floating enable move absolute position 0 0
 for_window [class="Spotify"] border none, move container to workspace $workspace10
 
 # reload the configuration file
@@ -197,6 +198,9 @@ hide_edge_borders both
 # finds out, if available)
 bar {
         #status_command i3status
+	#mode hide
+	#hidden_state hide
+	#modifier Mod1
 	status_command i3blocks -c /home/lord/.config/i3/i3blocks.conf
 	colors {
 		background $bg-color
