@@ -1,6 +1,6 @@
 #!/bin/bash
 
-icon="/home/lord/Pictures/avatar.png"
+icon= $HOME"/Pictures/avatar.png"
 tmpbg='/tmp/screen.png'
 
 scrot "$tmpbg"
